@@ -1,10 +1,16 @@
-def cabecalho(text):
-    print("\33[1;32m" + "~" * 145)
-    print('\33[34m' + f"{text:=^145}")
-    print('\33[1;32m' + "~" * 145 + '\33[m')
+res = 60
 
+def cabecalho(text):
+    print("\33[1;32m" + "~" * res)
+    print('\33[34m' + f"{text:=^{res}}")
+    print('\33[1;32m' + "~" * res + '\33[m')
+
+def paragrafo(text):
+    print('\33[34m' + f"{text:~^{res}}" + '\33[m')
+    
 def linha():
-    print('\33[1;32m' + "~" * 145 + '\33[m')
+    print('\33[1;32m' + "~" * res + '\33[m')
     
 def fimLinha():
-    print('\33[1;33m' + '\33[1;31m FIM \33[1;33m'.center(159, 'x'), '\33[0;m')
+    fim = ' FIM '
+    print(f'\33[1;33m{fim:x^{res}}\33[0;m')
