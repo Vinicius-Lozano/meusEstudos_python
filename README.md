@@ -1,2 +1,2 @@
-# meusEstudos_python
-uma coleção referente aos meus estudos sobre python
+# my-studies-python
+A collection of some of my studies in Python.
